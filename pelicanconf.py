@@ -17,7 +17,7 @@ AUTHOR_FEED_RSS = None
 
 THEME = './voce'
 DEFAULT_DATE_FORMAT = "%b %d, %Y"  
-USER_LOGO_URL = "images/tod.png"
+USER_LOGO_URL = ""
 
 TAGS_URL = 'tags.html'
 ARCHIVES_URL = 'archives.html'
