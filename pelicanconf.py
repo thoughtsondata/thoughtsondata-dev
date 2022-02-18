@@ -24,7 +24,7 @@ ARCHIVES_URL = 'archives.html'
 
 # Blogroll
 LINKS = (('Index', 'https://thoughtsondata.dev/'),
-         ('About', 'https://thoughtsondata.dev/pages/about-me.html'),
+         ('About', 'https://thoughtsondata.dev/pages/about.html'),
          ('Mailing List', 'https://docs.google.com/forms/d/e/1FAIpQLSdpjM_LVVvRCKhuFiYqemRuycfRChsM-Pr3nIho5mDO7c9qOw/viewform?usp=sf_link'),)
 
 # Social widget

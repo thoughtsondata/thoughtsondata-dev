@@ -1,6 +1,6 @@
-Title: About Me
+Title: About this site
 Date: 2020-05-27 10:20
 Slug: about
-Authors: Frank Corso
+Status: published
 
-Hey there! My name is Frank Corso and it's nice to meet you.
+'Thoughts on Data' is a project by data scientist and writer Malachi Ivey
