@@ -16,16 +16,20 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 THEME = './voce'
+DEFAULT_DATE_FORMAT = "%b %d, %Y"  
+USER_LOGO_URL = "images/tod.png"
+
+TAGS_URL = 'tags.html'
+ARCHIVES_URL = 'archives.html'
 
 # Blogroll
-LINKS = (('Pelican', 'https://getpelican.com/'),
-         ('Python.org', 'https://www.python.org/'),
-         ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('Index', 'https://thoughtsondata.dev/'),
+         ('About', 'https://thoughtsondata.dev/pages/about-me.html'),
+         ('Mailing List', 'https://docs.google.com/forms/d/e/1FAIpQLSdpjM_LVVvRCKhuFiYqemRuycfRChsM-Pr3nIho5mDO7c9qOw/viewform?usp=sf_link'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('Twitter', 'https://twitter.com/thoughtsondata'),
+          ('Email', 'mailto:hello@thoughtsondata.dev'),)
 
 DEFAULT_PAGINATION = 14
 

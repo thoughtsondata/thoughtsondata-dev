@@ -17,5 +17,6 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
+MANGLE_EMAILS = True
 #DISQUS_SITENAME = ""
 #GOOGLE_ANALYTICS = ""
