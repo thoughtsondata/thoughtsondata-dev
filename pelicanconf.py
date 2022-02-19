@@ -24,7 +24,7 @@ TAGS_URL = 'tags.html'
 ARCHIVES_URL = 'archives.html'
 
 MANGLE_EMAILS = True
-DISPLAY_PAGES_ON_MENU = True
+
 
 # Blogroll
 LINKS = (('Index', 'https://thoughtsondata.dev/'),
@@ -35,7 +35,7 @@ LINKS = (('Index', 'https://thoughtsondata.dev/'),
 SOCIAL = (('Twitter', 'https://twitter.com/thoughtsondata'),
           ('Email', 'mailto:hello@thoughtsondata.dev'),)
 
-DEFAULT_PAGINATION = 14
+DEFAULT_PAGINATION = 8
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
