@@ -13,7 +13,7 @@
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" type="text/css" media="all">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../theme/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="/theme/css/style.css" type="text/css" media="all">
   <link rel="stylesheet" href="../theme/css/pygments.css" type="text/css" media="all">
   
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -59,7 +59,7 @@
               <div class="social">   
                 <a href="https://twitter.com/thoughtsondata" title="Twitter" >
 <i class="fa fa-twitter fa-lg"></i></a>
-                <a href="mailto:hello@thoughtsondata.dev" title="Email" >
+                <a data-email="ved.atadnosthguoht@olleh:otliam" data-title="Email" title="You need javascript enabled to view this email" class="email">
 <i class="fa fa-envelope fa-lg"></i></a>
               </div>
             </div>
@@ -2405,8 +2405,8 @@ ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
 
       </div><!-- end of #logo -->
         <div class="tagline">
-                <a href="../tag/security.html" >Security (1)</a> &#124; 
-                <a href="../archives.html" >Archives (1)</a>
+                <a href="/tag/security.html" >Security (1)</a> &#124; 
+                <a href="/archives.html" >Archives (1)</a>
         </div>
     </div>
 
@@ -2419,7 +2419,7 @@ ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
             <div id="primary" class="content-area">
               <div id="main" class="site-main" role="main">
                 <div class="article-container">
-<a href="../articles/knowledge-representation.html">
+<a href="/knowledge-representation.html">
 	<article class="post">
 		<div class="blog-item-wrap">
 			<div class="post-inner-content">
@@ -2442,7 +2442,7 @@ ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
   <span id="right">
   </span>
   <div>
-      <a href="../author/malachi-ivey.html">[1]</a>
+      <a href="/author/malachi-ivey.html">[1]</a>
   </div>
 </div>
 </footer>
@@ -2463,7 +2463,7 @@ ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
         <div class="row">
                     <div class="copyright col-md-12">
                     This site is created with <a href="https://docs.getpelican.com/en/latest/" target="_blank">Pelican</a> |
-                    &copy; 2022 <a href="..">Malachi Ivey</a> </div>
+                    &copy; 2022 <a href="">Malachi Ivey</a> </div>
         </div>
       </div><!-- .site-info -->
       <div class="scroll-to-top" style="display: none;"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
@@ -2477,8 +2477,29 @@ ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
     }})
   </script>
 
+  <script type="text/javascript">
+    window.addEventListener('load', function(){
+      var e = document.querySelectorAll(".email");
+      for (var i = 0; i < e.length; i++) {
+        var email = e[i].getAttribute("data-email")
+        var title = e[i].getAttribute("data-title")
+        if (email){
+          e[i].href = email.split("").reverse().join("");
+          e[i].removeAttribute("data-email");
+          e[i].removeAttribute("data-title");
+          e[i].removeAttribute("class");
+          if (title){
+            e[i].setAttribute("title", title);
+          }
+          else{
+            e[i].removeAttribute("title");
+          }
+        }
+      }
+    })
+  </script>
 
-<script type="text/javascript" src="../theme/js/functions.min.js"></script>
+<script type="text/javascript" src="/theme/js/functions.min.js"></script>
  
 
 </body>

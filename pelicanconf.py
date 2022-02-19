@@ -1,6 +1,6 @@
 AUTHOR = 'Malachi Ivey'
 SITENAME = 'Thoughts on Data'
-SITEURL = 'https://www.thoughtsondata.dev/'
+SITEURL = ''
 
 PATH = 'content'
 
@@ -17,32 +17,14 @@ AUTHOR_FEED_RSS = None
 
 THEME = './voce'
 DEFAULT_DATE_FORMAT = "%b %d, %Y"  
-LOAD_CONTENT_CACHE = False
-MANGLE_EMAILS = False
 
-
-
-DEFAULT_PAGINATION = 14
 
 # Theme specific
-
 TAGS_URL = 'tags.html'
 ARCHIVES_URL = 'archives.html'
-RELATIVE_URLS = True
-DELETE_OUTPUT_DIRECTORY = True
-OUTPUT_RETENTION = [".git"]
 
-DISPLAY_CATEGORIES_ON_MENU = False
-DISPLAY_PAGES_ON_MENU = False
-SUMMARY_MAX_LENGTH = 50
-
-ARCHIVES_URL = "archives.html"
-ARCHIVES_SAVE_AS = 'archives.html'
-ARTICLE_URL = 'articles/{slug}.html'
-ARTICLE_SAVE_AS = 'articles/{slug}.html'
-PAGE_URL = 'pages/{slug}.html'
-PAGE_SAVE_AS = 'pages/{slug}.html'
-TAGS_URL = 'tag/{slug}.html'
+MANGLE_EMAILS = True
+DISPLAY_PAGES_ON_MENU = True
 
 # Blogroll
 LINKS = (('Index', 'https://thoughtsondata.dev/'),
@@ -53,5 +35,7 @@ LINKS = (('Index', 'https://thoughtsondata.dev/'),
 SOCIAL = (('Twitter', 'https://twitter.com/thoughtsondata'),
           ('Email', 'mailto:hello@thoughtsondata.dev'),)
 
+DEFAULT_PAGINATION = 14
+
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+#RELATIVE_URLS = True
