@@ -419,6 +419,23 @@ article.grid iframe {
   text-align: center;
   border-bottom: 1px solid #dedede;
 }
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 8s linear forwards;
+  animation-delay: 0s;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 .tagline {
   color: #1c202a;
   font-family: 'Montserrat', sans-serif;
