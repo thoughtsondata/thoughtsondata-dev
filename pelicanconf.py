@@ -1,37 +1,38 @@
-AUTHOR = 'Malachi Ivey'
+AUTHOR = 'Yes'
 SITENAME = 'Thoughts on Data'
 SITEURL = ''
+INDEX_TITLE = 'Thougths on data'
+INDEX_DESC = 'Description of the site yes'
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Rome'
+TIMEZONE = 'Asia/Singapore'
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = u'en'
+DEFAULT_DATE_FORMAT = "%b %d, %Y"
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-AUTHOR_FEED_ATOM = None
-AUTHOR_FEED_RSS = None
+THEME = "voce"
 
-ARTICLE_EXCLUDES = []
-
-THEME = './voce'
-DEFAULT_DATE_FORMAT = "%b %d, %Y"  
+LOAD_CONTENT_CACHE = False
+SLUGIFY_SOURCE = 'basename'
 
 
-# Theme specific
-TAGS_URL = 'tags.html'
-ARCHIVES_URL = 'archives.html'
+EXTRA_PATH_METADATA = {
+    'files/favicon.ico': {'path': 'favicon.ico'},
+    'files/robots.txt': {'path': 'robots.txt'},
+}
 
-MANGLE_EMAILS = True
+#Theme specific
+# GOOGLE_ANALYTICS_ID = "UA-123456-7"
+# GOOGLE_ANALYTICS_PROP = "siteurl.com"
+# TAGLINE = "Site Tagline"
+# MANGLE_EMAILS = False
+# GLOBAL_KEYWORDS = ("keywords",)
 
 
-# Blogroll
-LINKS =     (("Index", "/index.html"),
-	("About", "/pages/about.html"),
-         ('Mailing List', 'https://docs.google.com/forms/d/e/1FAIpQLSdpjM_LVVvRCKhuFiYqemRuycfRChsM-Pr3nIho5mDO7c9qOw/viewform?usp=sf_link'),)
+LINKS = (("Index", "/index.html"),
+	    ("About", "/pages/about.html"),
+        ('Mailing List', 'https://docs.google.com/forms/d/e/1FAIpQLSdpjM_LVVvRCKhuFiYqemRuycfRChsM-Pr3nIho5mDO7c9qOw/viewform?usp=sf_link'),)
 
 RELATIVE_URLS = True
 
@@ -41,6 +42,14 @@ SOCIAL = (('Twitter', 'https://twitter.com/thoughtsondata'),
 
 DEFAULT_PAGINATION = 8
 
+RELATIVE_URLS = True
+DELETE_OUTPUT_DIRECTORY = True
+# OUTPUT_RETENTION = [".git"]
+
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = False
+SUMMARY_MAX_LENGTH = 50
+
 ARCHIVES_URL = "archives.html"
 ARCHIVES_SAVE_AS = 'archives.html'
 ARTICLE_URL = 'articles/{slug}.html'
@@ -49,5 +58,7 @@ PAGE_URL = 'pages/{slug}.html'
 PAGE_SAVE_AS = 'pages/{slug}.html'
 TAGS_URL = 'tag/{slug}.html'
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+AUTHOR_SAVE_AS = ''
+AUTHORS_SAVE_AS = ''
+CATEGORY_SAVE_AS = ''
+CATEGORIES_SAVE_AS = ''
