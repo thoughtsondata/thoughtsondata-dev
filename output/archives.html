@@ -13,7 +13,7 @@
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" type="text/css" media="all">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/theme/css/style.css" type="text/css" media="all">
+  <link rel="stylesheet" href="./theme/css/style.css" type="text/css" media="all">
   <link rel="stylesheet" href="../theme/css/pygments.css" type="text/css" media="all">
   
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -59,7 +59,7 @@
               <div class="social">   
                 <a href="https://twitter.com/thoughtsondata" title="Twitter" >
 <i class="fa fa-twitter fa-lg"></i></a>
-                <a data-email="ved.atadnosthguoht@olleh:otliam" data-title="Email" title="You need javascript enabled to view this email" class="email">
+                <a href="mailto:hello@thoughtsondata.dev" title="Email" >
 <i class="fa fa-envelope fa-lg"></i></a>
               </div>
             </div>
@@ -2405,8 +2405,8 @@ ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
 
       </div><!-- end of #logo -->
         <div class="tagline">
-                <a href="/tag/security.html" >Security (2)</a> &#124; 
-                <a href="/archives.html" class="active">Archives (3)</a>
+                <a href="./tag/security.html" >Security (2)</a> &#124; 
+                <a href="./archives.html" class="active">Archives (3)</a>
         </div>
     </div>
 
@@ -2425,13 +2425,13 @@ ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
         <h2>2022</h2>
           <h3>June</h3>
           <ul>
-              <li><a href="/this-right-here.html"><time datetime="2022-06-17T00:00:00+02:00">Jun 17, 2022</time> - This right here</a></li>
+              <li><a href="./articles/tech.html"><time datetime="2022-06-17T00:00:00+02:00">Jun 17, 2022</time> - This right here</a></li>
           </ul>
         <h2>2020</h2>
           <h3>June</h3>
           <ul>
-              <li><a href="/knowledge-representation.html"><time datetime="2020-06-01T10:20:00+02:00">Jun 01, 2020</time> - Knowledge Representation</a></li>
-              <li><a href="/knowledge-representation-2.html"><time datetime="2020-06-01T10:20:00+02:00">Jun 01, 2020</time> - Knowledge Representation 2</a></li>
+              <li><a href="./articles/knowledge-representation.html"><time datetime="2020-06-01T10:20:00+02:00">Jun 01, 2020</time> - Knowledge Representation</a></li>
+              <li><a href="./articles/knowledge-representation-2.html"><time datetime="2020-06-01T10:20:00+02:00">Jun 01, 2020</time> - Knowledge Representation 2</a></li>
           </ul>
     </dl>
   </div>
@@ -2454,7 +2454,7 @@ ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
         <div class="row">
                     <div class="copyright col-md-12">
                     This site is created with <a href="https://docs.getpelican.com/en/latest/" target="_blank">Pelican</a> |
-                    &copy; 2022 <a href="">Malachi Ivey</a> </div>
+                    &copy; 2022 <a href=".">Malachi Ivey</a> </div>
         </div>
       </div><!-- .site-info -->
       <div class="scroll-to-top" style="display: none;"><i class="fa fa-angle-up"></i></div><!-- .scroll-to-top -->
@@ -2468,29 +2468,8 @@ ACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z
     }})
   </script>
 
-  <script type="text/javascript">
-    window.addEventListener('load', function(){
-      var e = document.querySelectorAll(".email");
-      for (var i = 0; i < e.length; i++) {
-        var email = e[i].getAttribute("data-email")
-        var title = e[i].getAttribute("data-title")
-        if (email){
-          e[i].href = email.split("").reverse().join("");
-          e[i].removeAttribute("data-email");
-          e[i].removeAttribute("data-title");
-          e[i].removeAttribute("class");
-          if (title){
-            e[i].setAttribute("title", title);
-          }
-          else{
-            e[i].removeAttribute("title");
-          }
-        }
-      }
-    })
-  </script>
 
-<script type="text/javascript" src="/theme/js/functions.min.js"></script>
+<script type="text/javascript" src="./theme/js/functions.min.js"></script>
  
 
 </body>
