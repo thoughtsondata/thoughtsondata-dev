@@ -1,6 +1,6 @@
 AUTHOR = 'Yes'
 SITENAME = 'Thoughts on Data'
-SITEURL = ''
+SITEURL = 'https://www.thoughtsondata.dev/'
 INDEX_TITLE = 'Thougths on data'
 INDEX_DESC = 'Description of the site yes'
 
