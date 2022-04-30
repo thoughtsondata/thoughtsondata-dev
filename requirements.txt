@@ -1,4 +1,0 @@
-invoke==1.6.0
-livereload==2.6.3
-pelican==4.7.2
-pelican[Markdown]
